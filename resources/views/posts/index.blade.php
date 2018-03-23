@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-    <h3>Posts</h3>
+    <h1>Posts</h1>
     @if(count($posts) > 0)
         @foreach($posts as $post)
             <div class="card" style="width: 18rem;">
