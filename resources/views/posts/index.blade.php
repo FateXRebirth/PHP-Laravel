@@ -8,7 +8,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><a href="/posts/{{$post->id}}">{{ $post->title }}</a></h5>
                     <h6 class="card-subtitle mb-2 text-muted">{{$post->author}}</h6>
-                    <p class="card-text">{{ $post->body }} </p>
+                    <p class="card-text"> {!! $post->body !!} </p>
                     <small> Written on {{ $post->created_at }} </small>
                 </div>
             </div>
