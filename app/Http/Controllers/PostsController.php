@@ -49,7 +49,7 @@ class PostsController extends Controller
         ]);
         
         $post = new Post;
-        $post->author = $request->input('author');
+        $post->user_id = auth()->user()->id;
         $post->title = $request->input('title');
         $post->body = $request->input('body');
         $post->save();
@@ -96,7 +96,6 @@ class PostsController extends Controller
         ]);
         
         $post = Post::find($id);
-        $post->author = $request->input('author');
         $post->title = $request->input('title');
         $post->body = $request->input('body');
         $post->save();
