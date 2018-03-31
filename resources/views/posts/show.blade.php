@@ -9,6 +9,6 @@
     </div>
 
     <hr>
-    <small>Written on {{ $post->created_at }}</small>
+    <small> Written on {{ $post->created_at }} <br> by {{ $post->user->name }}</small>
     
 @endsection
