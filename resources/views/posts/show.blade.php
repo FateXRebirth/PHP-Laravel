@@ -4,6 +4,9 @@
     <a href="/dashboard" class="btn btn-info">Go Back</a>
     <h1>{{$post->title}}</h1>
     
+    <img style="width:100%" src="/storage/cover_images/{{ $post->cover_image }}">
+    <hr>
+    
     <div>
         {!! $post->body !!}
     </div>
